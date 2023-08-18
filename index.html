@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<script>
-  /* ... Disable Click Kanan ... */
-  document.addEventListener("contextmenu", function (e) {
-      e.preventDefault();
-  });
-
-  document.addEventListener("keydown", function (e) {
-      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
-          e.preventDefault();
-      }
-  });
-</script>
-
-
-
-  <meta name="google-site-verification" content="flGp7gG25Ulhf30IFiKZ5qnppbG32CHxE-XMhDUn1j4" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome To X1Bypass Tools. Kumpulang tools, alat, downloader, Ai yang sangat dapat membantu hidupmu.">
+  <meta name="description" content="Welcome To X1Bypass Tools. Kumpulang tools, alat, downloader, AI yang sangat dapat membantu hidupmu.">
   <title>X1Bypass Tools</title>
   <style>
        /* ... (Your existing styles) ... */
@@ -218,6 +201,26 @@
     .qris-active .qris-image {
       display: block;
     }
+
+    /* changelog */
+    .changelog-container {
+      flex: 1;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      margin-left: 10px;
+      position: relative;
+    }
+    
+    .changelog-box {
+      height: 50%;
+      overflow-y: scroll;
+      padding: 10px;
+    }
+    
+    .changelog-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
   </style>
   <style>
 @media (max-width: 600px) {
@@ -244,6 +247,13 @@
   .qris-buttons a {
     margin: 10px 0;
   }
+
+  .tools ul {
+    font-weight: bold;
+    margin: 0 auto; /* Meratakan ul secara horizontal */
+    max-width: 80%; /* Mengatur lebar maksimal ul */
+  }
+
 
   /* Keep .tools-buttons in a single row on smaller screens */
   .tools-buttons {
@@ -296,38 +306,92 @@
     }
   </style>
 </head>
-
 <body>
-<script>
-function checkPassword() {
-  const enteredPassword = document.getElementById('password').value;
-  const correctPassword = 'Chessa';
-  const errorText = document.getElementById('errorText'); // Ambil elemen untuk pesan error
-
-  if (enteredPassword === correctPassword) {
-      document.getElementById('passwordOverlay').style.display = 'none';
-      document.body.style.overflow = 'visible';
-      document.getElementById('blurContainer').classList.remove('blur');
-  } else {
-      errorText.textContent = 'Kata sandi salah. Silakan coba lagi / Hubungi Admin'; // Tampilkan pesan error
-  }
+  <script>
+/* Function to scroll changelog automatically */
+function scrollChangelog() {
+  const changelogList = document.querySelector('.changelog-list');
+  const lastItem = changelogList.lastElementChild;
+  changelogList.scrollTop = lastItem.offsetTop;
 }
 
-</script>
+/* Automatically scroll the changelog when the page loads */
+window.onload = function() {
+  scrollChangelog();
+};
 
+    /* Disable Right-Click */
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
 
-<div class="password-overlay" id="passwordOverlay">
-<div class="password-box">
-    <label for="password">Masukkan kata sandi:</label>
-    <input type="password" id="password" onkeydown="checkEnter(event)" />
-    <button onclick="checkPassword()">Submit</button>
-    <p id="errorText" style="color: red;"></p> <!-- Elemen untuk pesan error -->
-</div>
+    /* Disable Ctrl+U */
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+      }
+    });
 
-</div>
+    /* Function to check password */
+    function checkPassword() {
+      const enteredPassword = document.getElementById('password').value;
+      const correctPassword = 'Chessa';
+      const errorText = document.getElementById('errorText');
 
-<br>
-<div class="container">
+      if (enteredPassword === correctPassword) {
+        document.getElementById('passwordOverlay').style.display = 'none';
+        document.body.style.overflow = 'visible';
+        document.getElementById('blurContainer').classList.remove('blur');
+      } else {
+        errorText.textContent = 'Kata sandi salah. Silakan coba lagi / Hubungi Admin';
+      }
+    }
+
+    /* Function to search content based on user input */
+    function searchContent(event) {
+      const searchText = event.target.value.toLowerCase();
+      const subLinks = document.querySelectorAll('.sub-link');
+
+      subLinks.forEach(subLink => {
+        const linkText = subLink.textContent.toLowerCase();
+        subLink.style.display = linkText.includes(searchText) ? 'block' : 'none';
+      });
+    }
+
+    /* Function to toggle sub-links visibility */
+    function toggleSubLinks(linkId, subLinksId) {
+      const mainLinks = document.querySelectorAll('.main-link');
+      mainLinks.forEach(link => {
+        if (link.id !== linkId) {
+          link.classList.remove('active');
+          document.getElementById(link.nextElementSibling.id).classList.remove('active');
+        }
+      });
+
+      const subLinks = document.getElementById(subLinksId);
+      subLinks.classList.toggle('active');
+    }
+
+    /* Add click event listeners to main links */
+    document.querySelectorAll('.main-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const subLinksId = 'portfolio-links-' + link.id.slice(10);
+        toggleSubLinks(link.id, subLinksId);
+        link.classList.toggle('active');
+      });
+    });
+  </script>
+
+  <div class="password-overlay" id="passwordOverlay">
+    <div class="password-box">
+      <label for="password">Masukkan kata sandi:</label>
+      <input type="password" id="password" />
+      <button onclick="checkPassword()">Submit</button>
+      <p id="errorText" style="color: red;"></p>
+    </div>
+  </div>
+
+  <div class="container">
   <h1>Welcome to X1Bypass Tools Advanced</h1>
   <p>Temukan yang kamu butuhkan seperti Ai dan beraneka macam tools yang dikumpulkan disini untuk membantu hidupmu.</p>
 <div>
@@ -354,6 +418,7 @@ function checkPassword() {
 
   <div class="main-link" id="portfolio-list-ai">Search Engine</div>
   <div class="sub-links" id="portfolio-links-list-ai">
+    <a href="https://andisearch.com/" class="sub-link">Andi Search</a>
     <a href="https://iask.ai/" class="sub-link">Ask Ai</a>
     <a href="https://gptgo.ai/" class="sub-link">GPTGoo</a>
     <a href="https://hashnode.com/rix" class="sub-link">Rix Chat</a>
@@ -363,12 +428,14 @@ function checkPassword() {
     <a href="https://crowdview.ai/" class="sub-link"> Crowdview</a>
     <a href="https://consensus.app/" class="sub-link">Consensus</a>
     <a href="https://sites.google.com/view/x1bypasstools/chatgpt/aio-search" class="sub-link">AIO Search</a>
+    <a href="https://www.tutorai.me/" class="sub-link">Learn Anything</a>
   </div>
   <div class="main-link" id="portfolio-list-ai">Image</div>
   <div class="sub-links" id="portfolio-links-list-ai">
     <a href="https://openart.ai/create" class="sub-link">OpenArt | LIMITED FREE</a>
     <a href="https://looka.com/" class="sub-link">Looka Design Logo</a>
     <a href="https://animeart.studio/" class="sub-link">AnimeART</a>
+    <a href="https://labs.openai.com/" class="sub-link">DALL·E</a>
     <a href="https://www.logoly.pro/#/" class="sub-link">Logoly P***hub</a>
     <a href="https://scribblediffusion.com/" class="sub-link">Scribble Diffusion</a>
     <a href="https://chat.coolai2.online/ai_draw" class="sub-link">Coolai2 | Login</a>
@@ -386,7 +453,10 @@ function checkPassword() {
     <a href="https://github.com/nateraw/stable-diffusion-videos" class="sub-link">Stable Diff Videos | Not Tested</a>
     <a href="https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin" class="sub-link">Stable Diff in Photoshop</a>
     <a href="https://github.com/yankooliveira/sd-webui-photopea-embed" class="sub-link">Stable Diff in Photopea</a>
-
+    <a href="https://facestudio.app/" class="sub-link">Face Studio Generator</a>
+    <a href="https://skybox.blockadelabs.com/" class="sub-link">360* Image Generator | Login | Paid</a>
+    <a href="https://mst.ai/home" class="sub-link">Minister Ai | Login</a>
+    <a href="https://chillin.online/" class="sub-link">Chillin Video | Login | Paid</a>
   </div>
   <div class="main-link" id="portfolio-list-ai">Prompt</div>
   <div class="sub-links" id="portfolio-links-list-ai">
@@ -403,7 +473,9 @@ function checkPassword() {
     <a href="https://www.ai-art.com.cn/?prompt/" class="sub-link">Ai Art | Midjourney</a>
     <a href="https://www.imiprompt.com/builder" class="sub-link">ImiPrompt | Midjourney</a>
     <a href="https://promptomania.com/prompt-builder/" class="sub-link">Prompt Builder</a>
-    <a href="https://promptbase.com/" class="sub-link">Prompt Base</a>
+  <a href="https://flowgpt.com/" class="sub-link">FlowGPT Prompt | Login</a>
+  <a href="https://promptbase.com/" class="sub-link">Prompt Base</a>
+  <a href="https://snackprompt.com/" class="sub-link">Snack Prompt</a>
   </div>
   <div class="main-link" id="portfolio-tools">ChatGPT</div>
   <div class="sub-links" id="portfolio-links-tools">
@@ -422,7 +494,41 @@ function checkPassword() {
   <a href="https://ora.ai/openai/gpt4" class="sub-link">Ora Ai | Login</a>
   <a href="https://bard.google.com/" class="sub-link">Google Bard | Login</a>
   <a href="https://sites.google.com/view/x1bypasstools/chatgpt/altianhu-gpt4-limited" class="sub-link">Aiyunos GPT4 | LIMITED</a>
-  <a href="https://flowgpt.com/" class="sub-link">FlowGPT PROMPT | Login</a>
+  <a href="https://korewa.ai/" class="sub-link">Korewa Wibu | Login | PAID</a>
+  <a href="https://yippity.io/" class="sub-link">Yippity | Login | Text To Quiz</a>
+  <a href="https://www.autoblogger.ai/" class="sub-link">AutoBlogger Ai</a>
+  <a href="https://jit.codes/" class="sub-link">Jit Codes</a>
+  </div>
+  <div class="main-link" id="portfolio-detect">Anti Ai</div>
+  <div class="sub-links" id="portfolio-links-detect">
+    <a href="https://undetectable.ai/" class="sub-link">Undetectable | Login | Paid</a>
+    <a href="hhttps://www.zerogpt.com/" class="sub-link">ZeroGPT</a>
+    <a href="https://revealai.streamlit.app/" class="sub-link">Revealai</a>
+    <a href="https://openai-openai-detector--f4d78.hf.space/" class="sub-link">OpenAi Detector</a>
+  </div>
+  <div class="main-link" id="portfolio-transfer">Transfer File</div>
+  <div class="sub-links" id="portfolio-links-transfer">
+    <a href="https://transfer.zip/" class="sub-link">Transfer Zip | Up to 1TB</a>
+    <a href="https://file.pizza/" class="sub-link">File Pizza</a>
+    <a href="https://transfer.sh/" class="sub-link">Transfer SH</a>
+    <a href="https://www.sharedrop.io/" class="sub-link">Sharedrop | P2P Tranfer File</a>
+    <a href="https://jidrop.com/" class="sub-link">JiDrop | P2P Tranfer File</a>
+    <a href="https://snapdrop.net/" class="sub-link">Snapdrop | P2P Tranfer File</a>
+  </div>
+  <div class="main-link" id="portfolio-opendir">Open Direct</div>
+  <div class="sub-links" id="portfolio-links-opendir">
+    <a href="https://www.eyeofjustice.com/od/" class="sub-link">Search Portal</a>
+    <a href="https://file-extension.net/seeker/" class="sub-link">File Seeker</a>
+    <a href="https://filepursuit.com/" class="sub-link">File Pursuit</a>
+    <a href="https://lumpysoft.com/" class="sub-link">lumpysoft</a>
+    <a href="http://palined.com/search/" class="sub-link">Palined</a>
+    <a href="https://sites.google.com/view/l33tech/tools/ods?authuser=0" class="sub-link">L33Tech</a>
+    <a href="http://lendx.org/" class="sub-link">Lendx</a>
+    <a href="https://doyou.needmorehdd.space/" class="sub-link">Needmorehdd</a>
+    <a href="https://open-directories.reecemercer.dev/" class="sub-link">Reecemercer</a>
+    <a href="https://odfinder.github.io/" class="sub-link">OD Finder</a>
+    <a href="https://opendirsearch.abifog.com/" class="sub-link">Abifog</a>
+    <a href="http://torrbot.com/#" class="sub-link">Torrbot</a>
   </div>
   <div class="main-link" id="portfolio-microsoft">Microsoft</div>
   <div class="sub-links" id="portfolio-links-microsoft">
@@ -440,7 +546,8 @@ function checkPassword() {
   <a href="https://sites.google.com/view/x1bypasstools/list-ai/creator-playbook" class="sub-link">Creator Playbook</a>
   <a href="https://sites.google.com/view/x1bypasstools/list-ai/digital" class="sub-link">Digital</a>
   <a href="https://tinygeeker.github.io/menu/" class="sub-link">Flying Rabbit Navigation</a>
-
+  <a href="https://lachief.io/" class="sub-link">Lachief</a>
+  <a href="https://helloai.wiki/" class="sub-link">Hello Ai Wiki</a>
   </div>
   <div class="main-link" id="portfolio-downloader">Downloader</div>
   <div class="sub-links" id="portfolio-links-downloader">
@@ -465,6 +572,8 @@ function checkPassword() {
   <a href="https://clipdrop.co/tools" class="sub-link">ClipDrop</a>
   <a href="https://links.x1bypass.my.id/" class="sub-link">Short Links</a>
   <a href="https://teleimg.x1bypass.my.id/" class="sub-link">Telegraph Image | Image Hosting</a>
+  <a href="https://anonymousemail.me/" class="sub-link">Send Anonymous Email</a>
+  <a href="https://hunter.io/email-verifier" class="sub-link">Hunter | Email Finder/Verif</a>
   </div>
   <div class="main-link" id="portfolio-list-ai">Nonton</div>
   <div class="sub-links" id="portfolio-links-list-ai">
@@ -485,8 +594,27 @@ function checkPassword() {
 <div class="container">
   <div class="tools">
     <h2>X1Bypass Tools Microsoft v1.2</h2>
-    <p>Feel free to make your Microsoft set up free:</p>
+    <p>Feel free to make your Microsoft set up free:
     <p>Tested : Windows 11 Pro</p>
+    <h3>Changelog:</h3>
+    <div class="changelog-container">
+    <div class="changelog-box">
+      <div class="changelog-header">
+    <ul class="changelog-list">
+    <center>
+      <li><h4>Version 1.0: Initial release.</h4></li>
+      (+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script
+      <br><br>
+      <li><h4>Version 1.1: Initial release.</h4></li>
+      (+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script<br>(+) Improved performance and bug fixes<br>(+) Check Office and Activation<br>(+) Upgrade All Apps Windows
+      <br><br>
+      <li><h4>Version 1.2: Initial release.</h4></li>
+      (+) Improved Script<br>(+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script<br>(+) Improved performance and bug fixes<br>(-) Check Office and Activation<br>(+) Upgrade All Apps Windows<br>(+) Fixwin 10/11<br>(+) powertoys manual
+    </center>
+    </ul>
+  </div>
+  </div>
+  </div>
     <div class="tools-buttons">
         <a href="https://drive.x1bypass.my.id/2:/Tools.rar?a=view" target="_blank">Tools v1.0</a>
       <a href="https://drive.x1bypass.my.id/2:/Tools%20v1.1.rar?a=view" target="_blank">Tools v1.1</a>
@@ -499,7 +627,7 @@ function checkPassword() {
 <div class="container">
   <div class="contact">
     <h2>Contact Me</h2>
-    <p>Feel free to reach out to me via Email or WhatsApp:</p>
+    <p>Feel free to reach out to me via Email or WhatsApp:
     <div class="contact-buttons">
       <a href="mailto:calvinfirlansyah@x1bypass.my.id">Email</a>
       <a href="https://i.ibb.co/H7SMBTB/Picsart-23-08-17-08-38-45-762.jpg" target="_blank">WhatsApp</a>
