@@ -331,6 +331,24 @@ function checkPassword() {
   <h1>Welcome to X1Bypass Tools Advanced</h1>
   <p>Temukan yang kamu butuhkan seperti Ai dan beraneka macam tools yang dikumpulkan disini untuk membantu hidupmu.</p>
 <div>
+
+  <script>
+    // Function to search content based on user input
+    function searchContent(event) {
+      const searchText = event.target.value.toLowerCase();
+      const subLinks = document.querySelectorAll('.sub-link');
+      
+      subLinks.forEach(subLink => {
+        const linkText = subLink.textContent.toLowerCase();
+        if (linkText.includes(searchText)) {
+          subLink.style.display = 'block';
+        } else {
+          subLink.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  
   <input type="text" id="searchInput" placeholder="Filter Kata ..." onkeyup="searchContent(event)">
 </div>
 
