@@ -269,39 +269,6 @@
   }
 }
 
-.password-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .password-box {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .password-box label,
-    .password-box input {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .password-box button {
-        background-color: #3498db;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
 
     /* Style for blurring the content */
     .blur {
@@ -335,20 +302,6 @@ window.onload = function() {
       }
     });
 
-    /* Function to check password */
-    function checkPassword() {
-      const enteredPassword = document.getElementById('password').value;
-      const correctPassword = 'Chessa';
-      const errorText = document.getElementById('errorText');
-
-      if (enteredPassword === correctPassword) {
-        document.getElementById('passwordOverlay').style.display = 'none';
-        document.body.style.overflow = 'visible';
-        document.getElementById('blurContainer').classList.remove('blur');
-      } else {
-        errorText.textContent = 'Kata sandi salah. Silakan coba lagi / Hubungi Admin';
-      }
-    }
 
     /* Function to search content based on user input */
     function searchContent(event) {
@@ -384,15 +337,6 @@ window.onload = function() {
       });
     });
   </script>
-
-  <div class="password-overlay" id="passwordOverlay">
-    <div class="password-box">
-      <label for="password">Masukkan kata sandi:</label>
-      <input type="password" id="password" />
-      <button onclick="checkPassword()">Submit</button>
-      <p id="errorText" style="color: red;"></p>
-    </div>
-  </div>
 
   <div class="container">
   <h1>Welcome to X1Bypass Tools Advanced</h1>
