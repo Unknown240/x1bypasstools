@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome To X1Bypass Tools. Kumpulang tools, alat, downloader, dan AI yang sangat dapat membantu hidupmu.">
+  <meta name="keywords" content="Ai, Tools, Web Tools, Midjourney, Alat, X1Bypass, X1Bypass Store, Tools Windows, Windows, Office, Downloader">
+  <meta name="author" content="X1Bypass Store | Clvnfrlnsyh">
+  <link rel="icon" href="https://www.blogger.com/favicon-image.g?blogID=8480997599807512435" type="image/png">
+  <title>X1Bypass Tools</title>
+  <style>
+  /* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2980b9;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Navigation Links */
+.main-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-link:hover {
+  background-color: #2980b9;
+}
+
+.sub-links {
+  display: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.main-link.active + .sub-links {
+  display: block;
+}
+
+.sub-link {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-link:hover {
+  background-color: #d5dbdb;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 40px;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.contact p {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00b894;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-buttons a:hover {
+  background-color: #00a884;
+}
+
+/* Tools Section */
+.tools {
+  margin-top: 40px;
+}
+
+.tools h2 {
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.tools p {
+  font-size: 16px;
+  color: #333;
+}
+
+.tools-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tools-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tools-buttons a:hover {
+  background-color: #5a4bd0;
+}
+
+/* Search Input */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 10px;
+}
+
+/* QRIS Buttons */
+.qris-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.qris-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fdcb6e;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.qris-buttons a:hover {
+  background-color: #ffb74d;
+}
+
+/* Changelog */
+.changelog-container {
+  flex: 1;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  position: relative;
+}
+
+.changelog-box {
+  height: 20%;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.changelog-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .main-link {
+    margin: 10px 0;
+  }
+
+  .sub-links {
+    margin-top: 10px;
+  }
+
+  .tools-buttons,
+  .contact-buttons,
+  .qris-buttons {
+    flex-direction: column;
+  }
+
+  .tools-buttons a,
+  .contact-buttons a,
+  .qris-buttons a {
+    margin: 10px 0;
+  }
+
+  .tools ul {
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .tools-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tools-buttons a {
+    margin: 0 5px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <script>
+/* Function to scroll changelog automatically */
+function scrollChangelog() {
+  const changelogList = document.querySelector('.changelog-list');
+  const lastItem = changelogList.lastElementChild;
+  changelogList.scrollTop = lastItem.offsetTop;
+}
+
+/* Automatically scroll the changelog when the page loads */
+window.onload = function() {
+  scrollChangelog();
+};
+
+    /* Disable Right-Click */
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+
+    /* Disable Ctrl+U */
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+      }
+    });
+
+
+    /* Function to search content based on user input */
+    function searchContent(event) {
+      const searchText = event.target.value.toLowerCase();
+      const subLinks = document.querySelectorAll('.sub-link');
+
+      subLinks.forEach(subLink => {
+        const linkText = subLink.textContent.toLowerCase();
+        subLink.style.display = linkText.includes(searchText) ? 'block' : 'none';
+      });
+    }
+
+    /* Function to toggle sub-links visibility */
+    function toggleSubLinks(linkId, subLinksId) {
+      const mainLinks = document.querySelectorAll('.main-link');
+      mainLinks.forEach(link => {
+        if (link.id !== linkId) {
+          link.classList.remove('active');
+          document.getElementById(link.nextElementSibling.id).classList.remove('active');
+        }
+      });
+
+      const subLinks = document.getElementById(subLinksId);
+      subLinks.classList.toggle('active');
+    }
+
+    /* Add click event listeners to main links */
+    document.querySelectorAll('.main-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const subLinksId = 'portfolio-links-' + link.id.slice(10);
+        toggleSubLinks(link.id, subLinksId);
+        link.classList.toggle('active');
+      });
+    });
+  </script>
+
+  <div class="container">
+  <h1>Welcome to X1Bypass Tools Advanced</h1>
+  <blockquote>Last Update 22/8/23</blockquote>
+  <p>Temukan yang kamu butuhkan seperti Ai dan beraneka macam tools yang dikumpulkan disini untuk membantu hidupmu.</p>
+<div>
+
+  <script>
+    // Function to search content based on user input
+    function searchContent(event) {
+      const searchText = event.target.value.toLowerCase();
+      const subLinks = document.querySelectorAll('.sub-link');
+      
+      subLinks.forEach(subLink => {
+        const linkText = subLink.textContent.toLowerCase();
+        if (linkText.includes(searchText)) {
+          subLink.style.display = 'block';
+        } else {
+          subLink.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  
+  <input type="text" id="searchInput" placeholder="Filter Kata ..." onkeyup="searchContent(event)">
+</div>
+
+  <div class="main-link" id="portfolio-list-ai">Search Engine</div>
+  <div class="sub-links" id="portfolio-links-list-ai">
+    <a href="https://andisearch.com/" class="sub-link">Andi Search</a>
+    <a href="https://iask.ai/" class="sub-link">Ask Ai</a>
+    <a href="https://gptgo.ai/" class="sub-link">GPTGoo</a>
+    <a href="https://hashnode.com/rix" class="sub-link">Rix Chat</a>
+    <a href="https://topai.tools/" class="sub-link">Topai Tools</a>
+    <a href="https://medisearch.io/" class="sub-link">Medical search</a>
+    <a href="https://you.com/" class="sub-link">You</a>
+    <a href="https://crowdview.ai/" class="sub-link"> Crowdview</a>
+    <a href="https://consensus.app/" class="sub-link">Consensus</a>
+    <a href="https://sites.google.com/view/x1bypasstools/chatgpt/aio-search" class="sub-link">AIO Search</a>
+    <a href="https://www.tutorai.me/" class="sub-link">Learn Anything</a>
+  </div>
+  <div class="main-link" id="portfolio-list-ai">Image</div>
+  <div class="sub-links" id="portfolio-links-list-ai">
+    <a href="https://openart.ai/create" class="sub-link">OpenArt | LIMITED FREE</a>
+    <a href="https://looka.com/" class="sub-link">Looka Design Logo</a>
+    <a href="https://animeart.studio/" class="sub-link">AnimeART</a>
+    <a href="https://labs.openai.com/" class="sub-link">DALL·E</a>
+    <a href="https://generated.photos/human-generator/64e2539059eb0f000d733bc3" class="sub-link">Human Generator</a>
+    <a href="https://www.logoly.pro/#/" class="sub-link">Logoly P***hub</a>
+    <a href="https://scribblediffusion.com/" class="sub-link">Scribble Diffusion</a>
+    <a href="https://chat.coolai2.online/ai_draw" class="sub-link">Coolai2 | Login</a>
+    <a href="https://diffusionbee.com/" class="sub-link">Diffusionbee | MacOS</a>
+    <a href="https://replicate.com/jingyunliang/swinir" class="sub-link">Swinir | Image Restoration</a>
+    <a href="https://replicate.com/tencentarc/gfpgan" class="sub-link">GfpGAN | Image Restoration</a>
+    <a href="https://replicate.com/xinntao/realesrgan" class="sub-link">RealesrGAN | Image Restoration</a>
+    <a href="https://github.com/Tohrusky/Final2x" class="sub-link">Final2x Platform | Image Restoration</a>
+    <a href="https://replicate.com/nightmareai/real-esrgan" class="sub-link">Real-EsrGAN| Image Restoration</a>
+    <a href="https://github.com/upscayl/upscayl" class="sub-link">UPSCAYL | Image Restoration</a>
+    <a href="https://beta.quickqr.art/generate" class="sub-link">QR Generator</a>
+    <a href="https://www.extendimage.ai/editor" class="sub-link">Extend Image</a>
+    <a href="https://yodayo.com/text-to-image/" class="sub-link">Yodayo | Text to Image AnimeArt | Login</a>
+    <a href="https://stablediffusionweb.com/#demo" class="sub-link">Stable Diff Web | DEMO LIMITED</a>
+    <a href="https://github.com/nateraw/stable-diffusion-videos" class="sub-link">Stable Diff Videos | Not Tested</a>
+    <a href="https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin" class="sub-link">Stable Diff in Photoshop</a>
+    <a href="https://github.com/yankooliveira/sd-webui-photopea-embed" class="sub-link">Stable Diff in Photopea</a>
+    <a href="https://facestudio.app/" class="sub-link">Face Studio Generator</a>
+    <a href="https://skybox.blockadelabs.com/" class="sub-link">360* Image Generator | Login | Paid</a>
+    <a href="https://mst.ai/home" class="sub-link">Minister Ai | Login</a>
+    <a href="https://chillin.online/" class="sub-link">Chillin Video | Login | Paid</a>
+  </div>
+  <div class="main-link" id="portfolio-list-ai">Prompt</div>
+  <div class="sub-links" id="portfolio-links-list-ai">
+    <a href="https://imagetoprompt.com/" class="sub-link">Image To Prompt</a>
+    <a href="https://replicate.com/methexis-inc/img2prompt" class="sub-link">IMG2Prompt | Image To Prompt</a>
+    <a href="https://huggingface.co/spaces/pharma/CLIP-Interrogator" class="sub-link">Clip Interrogator | Image To Prompt</a>
+    <a href="https://github.com/receyuki/stable-diffusion-prompt-reader" class="sub-link">Stable Diff Prompt Reader</a>
+    <a href="https://mp.weixin.qq.com/s/gyKgSF7kbie7sPXRQUDWgg" class="sub-link">How To Use | China | Midjourney</a>
+    <a href="https://poe.com/MJEN" class="sub-link">Mjen | Midjourney</a>
+    <a href="https://www.kandouyin.com/" class="sub-link">Kandouyin | Midjourney</a>
+    <a href="https://better.avatarprompt.net/" class="sub-link">AvatarPrompt | Midjourney</a>
+    <a href="https://yesu.tech/" class="sub-link">YesuTech | Midjourney</a>
+    <a href="https://prompt.noonshot.com/" class="sub-link">Noonshot | Midjourney </a>
+    <a href="https://www.ai-art.com.cn/?prompt/" class="sub-link">Ai Art | Midjourney</a>
+    <a href="https://www.imiprompt.com/builder" class="sub-link">ImiPrompt | Midjourney</a>
+    <a href="https://promptomania.com/prompt-builder/" class="sub-link">Prompt Builder</a>
+  <a href="https://flowgpt.com/" class="sub-link">FlowGPT Prompt | Login</a>
+  <a href="https://promptbase.com/" class="sub-link">Prompt Base</a>
+  <a href="https://snackprompt.com/" class="sub-link">Snack Prompt</a>
+  </div>
+  <div class="main-link" id="portfolio-tools">ChatGPT</div>
+  <div class="sub-links" id="portfolio-links-tools">
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/chatgpt-next" class="sub-link">ChatGPT Next | Auth : Public</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/llama" class="sub-link">Llama Perplexity</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/rebahan-ai" class="sub-link">Rebahan Ai</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/freegpt-webui" class="sub-link">FreeGPT WebUI</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/huggingchat" class="sub-link">HuggingChat</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/any-summary" class="sub-link">Any Summary</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/ask2end" class="sub-link">Ask2End | Buat pertanyaan</a>
+  <a href="https://www.voc.ai/copilot" class="sub-link">VOC Ai</a>
+  <a href="https://claude.ai/" class="sub-link">Claude Ai | Login</a>
+  <a href="https://poe.com/" class="sub-link">Poe Ai | Login</a>
+  <a href="https://www.chatpdf.com/" class="sub-link">Chat with PDF</a>
+  <a href="https://chat.forefront.ai/" class="sub-link">Forefront Ai | Login</a>
+  <a href="https://ora.ai/openai/gpt4" class="sub-link">Ora Ai | Login</a>
+  <a href="https://bard.google.com/" class="sub-link">Google Bard | Login</a>
+  <a href="https://sites.google.com/view/x1bypasstools/chatgpt/altianhu-gpt4-limited" class="sub-link">Aiyunos GPT4 | LIMITED</a>
+  <a href="https://korewa.ai/" class="sub-link">Korewa Wibu | Login | PAID</a>
+  <a href="https://yippity.io/" class="sub-link">Yippity | Login | Text To Quiz</a>
+  <a href="https://www.autoblogger.ai/" class="sub-link">AutoBlogger Ai</a>
+  <a href="https://jit.codes/" class="sub-link">Jit Codes</a>
+  </div>
+  <div class="main-link" id="portfolio-detect">Anti Ai</div>
+  <div class="sub-links" id="portfolio-links-detect">
+    <a href="https://undetectable.ai/" class="sub-link">Undetectable | Login | Paid</a>
+    <a href="hhttps://www.zerogpt.com/" class="sub-link">ZeroGPT</a>
+    <a href="https://revealai.streamlit.app/" class="sub-link">Revealai</a>
+    <a href="https://openai-openai-detector--f4d78.hf.space/" class="sub-link">OpenAi Detector</a>
+  </div>
+  <div class="main-link" id="portfolio-transfer">Transfer File</div>
+  <div class="sub-links" id="portfolio-links-transfer">
+    <a href="https://transfer.zip/" class="sub-link">Transfer Zip | Up to 1TB</a>
+    <a href="https://file.pizza/" class="sub-link">File Pizza</a>
+    <a href="https://transfer.sh/" class="sub-link">Transfer SH</a>
+    <a href="https://www.sharedrop.io/" class="sub-link">Sharedrop | P2P Tranfer File</a>
+    <a href="https://jidrop.com/" class="sub-link">JiDrop | P2P Tranfer File</a>
+    <a href="https://snapdrop.net/" class="sub-link">Snapdrop | P2P Tranfer File</a>
+  </div>
+  <div class="main-link" id="portfolio-opendir">Open Direct</div>
+  <div class="sub-links" id="portfolio-links-opendir">
+    <a href="https://www.eyeofjustice.com/od/" class="sub-link">Search Portal</a>
+    <a href="https://file-extension.net/seeker/" class="sub-link">File Seeker</a>
+    <a href="https://filepursuit.com/" class="sub-link">File Pursuit</a>
+    <a href="https://lumpysoft.com/" class="sub-link">lumpysoft</a>
+    <a href="http://palined.com/search/" class="sub-link">Palined</a>
+    <a href="https://sites.google.com/view/l33tech/tools/ods?authuser=0" class="sub-link">L33Tech</a>
+    <a href="http://lendx.org/" class="sub-link">Lendx</a>
+    <a href="https://doyou.needmorehdd.space/" class="sub-link">Needmorehdd</a>
+    <a href="https://open-directories.reecemercer.dev/" class="sub-link">Reecemercer</a>
+    <a href="https://odfinder.github.io/" class="sub-link">OD Finder</a>
+    <a href="https://opendirsearch.abifog.com/" class="sub-link">Abifog</a>
+    <a href="http://torrbot.com/#" class="sub-link">Torrbot</a>
+  </div>
+  <div class="main-link" id="portfolio-microsoft">Microsoft</div>
+  <div class="sub-links" id="portfolio-links-microsoft">
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download" class="sub-link">Windows Downloader</a>
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download/office-c2r-installer" class="sub-link">Office C2R Installer</a>
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download/windows-7" class="sub-link">Windows 7</a>
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download/windows-business-download" class="sub-link">Windows Business Download</a>
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download/windows-10-ltsc-download" class="sub-link">Windows 10 LTSC</a>
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download/unsupport-product" class="sub-link">Unsupport Product</a>
+    <a href="https://sites.google.com/view/x1bypasstools/windows-download/windows-vista" class="sub-link">Windows Vista</a>
+  </div>
+  <div class="main-link" id="portfolio-list-ai">List Ai</div>
+  <div class="sub-links" id="portfolio-links-list-ai">
+    <a href="https://sites.google.com/view/x1bypasstools/list-ai/ai-tool-master-list" class="sub-link">Ai Tool Master List</a>
+  <a href="https://sites.google.com/view/x1bypasstools/list-ai/creator-playbook" class="sub-link">Creator Playbook</a>
+  <a href="https://sites.google.com/view/x1bypasstools/list-ai/digital" class="sub-link">Digital</a>
+  <a href="https://tinygeeker.github.io/menu/" class="sub-link">Flying Rabbit Navigation</a>
+  <a href="https://lachief.io/" class="sub-link">Lachief</a>
+  <a href="https://saasaitools.com/ class="sub-link">Saas Ai Tools</a>
+  <a href="https://helloai.wiki/" class="sub-link">Hello Ai Wiki</a>
+  </div>
+  <div class="main-link" id="portfolio-downloader">Downloader</div>
+  <div class="sub-links" id="portfolio-links-downloader">
+    <a href="https://sites.google.com/view/x1bypasstools/downloader/terabox-downloader" class="sub-link">Terabox Downloader</a>
+    <a href="https://sites.google.com/view/x1bypasstools/downloader/imgdownloader" class="sub-link">IMG Downloader</a>
+    <a href="https://sites.google.com/view/x1bypasstools/downloader/get-paid-stock" class="sub-link">GetPaidStock</a>
+    <a href="https://sites.google.com/view/x1bypasstools/downloader/downloader" class="sub-link">Downloader la</a>
+  </div>
+  <div class="main-link" id="portfolio-lainnya">Lainnya</div>
+  <div class="sub-links" id="portfolio-links-lainnya">
+    <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/cleverpdf" class="sub-link">CleverPDF</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/bajakan" class="sub-link">App Bajakan</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/tinywow" class="sub-link">Tinywow</a>
+  <a href="https://whatslink.info/" class="sub-link">Whats The Link??</a>
+  <a href="https://cloudconvert.com/" class="sub-link">Cloud Convert</a>
+  <a href="https://www.yalijuda.com/" class="sub-link">Foto / Video Compression | China</a>
+  <a href="https://brie.fi/ng" class="sub-link">Video Chat | Alternative Zoom</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/temp-mail" class="sub-link">Temp Mail</a>
+  <a href="https://teradood.hunternblz.com/" class="sub-link">Terabox & Doodstream Direct Link</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/telegram-scan" class="sub-link">Telegram Scanner</a>
+  <a href="https://i.ibb.co/H7SMBTB/Picsart-23-08-17-08-38-45-762.jpg" class="sub-link">Deepn*** / Deepfake | PAID</a>
+  <a href="https://clipdrop.co/tools" class="sub-link">ClipDrop</a>
+  <a href="https://links.x1bypass.my.id/" class="sub-link">Short Links</a>
+  <a href="https://teleimg.x1bypass.my.id/" class="sub-link">Telegraph Image | Image Hosting</a>
+  <a href="https://anonymousemail.me/" class="sub-link">Send Anonymous Email</a>
+  <a href="https://raw.githubusercontent.com/Illegal-Services/Illegal_Services/downloads/IS.bookmarks.html" class="sub-link"> Boomarks Illegal Service</a>
+  <a href="https://hunter.io/email-verifier" class="sub-link">Hunter | Email Finder/Verif</a>
+  </div>
+  <div class="main-link" id="portfolio-list-ai">Nonton</div>
+  <div class="sub-links" id="portfolio-links-list-ai">
+    <a href="https://movieuniverse.se/" class="sub-link">Movie Universe</a>
+    <a href="https://bflix.sx/home" class="sub-link">BFlix</a>
+    <a href="https://dutafilm.buzz/" class="sub-link">Duta Film</a>
+    <a href="https://film-apik.sbs/" class="sub-link">Film Apik</a>
+    <a href="https://ngefilm21.lol/" class="sub-link">NgeFilm</a>
+    <a href="https://rebahin.bid/" class="sub-link">Rebahin TV</a> 
+    <a href="https://tv2.lk21official.pro/" class="sub-link">LK21</a> 
+    <a href="https://hurawatch.at/home" class="sub-link">Hurawatch</a> 
+    <a href="https://tv.idlixprime.com/" class="sub-link">Idlix Prime</a> 
+    <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/sokuja" class="sub-link">Sokuja | Nonton Anime</a>
+    <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/ngewibu" class="sub-link">Ngewibu.TV | Alternative Bstation</a>
+    <a href="https://wwvv.ssoap2day.to/home" class="sub-link">Ssoap2Day</a>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="tools">
+    <h2>X1Bypass Tools Microsoft</h2>
+    <p>Feel free to make your Microsoft set up free</p>
+    <blockquote>Last Update 19/8/23</blockquote>
+    <blockquote>Password : x1bypass</blockquote>
+    <p>Tested : Windows 11 Pro</p>
+    <h3>Changelog:</h3>
+    <div class="changelog-container">
+    <div class="changelog-box">
+      <div class="changelog-header">
+    <ul class="changelog-list">
+    <center>
+      <li><h4>Version 1.0: Initial release.</h4></li>
+      (+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script
+      <br><br>
+      <li><h4>Version 1.1: Initial release.</h4></li>
+      (+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script<br>(+) Improved performance and bug fixes<br>(+) Check Office and Activation<br>(+) Upgrade All Apps Windows
+      <br><br>
+      <li><h4>Version 1.2: Initial release.</h4></li>
+      (+) Improved Script<br>(+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script<br>(+) Improved performance and bug fixes<br>(-) Check Office and Activation<br>(+) Upgrade All Apps Windows<br>(+) Fixwin 10/11<br>(+) Powertoys manual
+      <li><h4>Version 1.3: Initial release.</h4></li>
+      (+) Check OS And Activation<br>(+) Windows Utility<br>(+) Microsoft Activation Script<br>(+) Improved performance and bug fixes<br>(+) Upgrade All Apps Windows<br>(+) Fixwin 10/11<br>(+) Powertoys auto<br>(+) Block Windows Update<br>(+) Reset Windows Tools
+    </center>
+    </ul>
+  </div>
+  </div>
+  </div>
+    <div class="tools-buttons">
+        <a href="https://drive.x1bypass.my.id/2:/Tools/" target="_blank">Versi Sebelumnya</a>
+      <a href="https://drive.x1bypass.my.id/2:/Tools/Tools%201.3%20Beta.rar?a=view" target="_blank">Tools v1.3</a>
+      <a href="https://www.virustotal.com/gui/file/6399fec16282db90168c9146a1843cbbb3472d959695847945aa72e85596e242?nocache=1" target="_blank">Check Virus Total</a>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me via Email or WhatsApp:
+    <div class="contact-buttons">
+      <a href="mailto:calvinfirlansyah@x1bypass.my.id">Email</a>
+      <a href="https://i.ibb.co/H7SMBTB/Picsart-23-08-17-08-38-45-762.jpg" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="donate">
+    <h2>Donasi</h2>
+    <div class="qris-buttons">
+      <a href="https://i.ibb.co/ZB98rPr/bixfy.jpg" class="qris-button">QRIS</a>
+    </div>
+    <p>Terima kasih atas dukungan Anda dalam membangun masa depan yang lebih baik!</p>
+  </div>
+</div>
+<br><br>
+<script>
+  // Function to toggle sub-links visibility
+  function toggleSubLinks(linkId, subLinksId) {
+    const mainLinks = document.querySelectorAll('.main-link');
+    mainLinks.forEach(link => {
+      if (link.id !== linkId) {
+        link.classList.remove('active');
+        document.getElementById(link.nextElementSibling.id).classList.remove('active');
+      }
+    });
+
+    const subLinks = document.getElementById(subLinksId);
+    subLinks.classList.toggle('active');
+  }
+
+  const mainLinks = document.querySelectorAll('.main-link');
+  mainLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const subLinksId = 'portfolio-links-' + link.id.slice(10);
+      toggleSubLinks(link.id, subLinksId);
+      link.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>
