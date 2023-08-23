@@ -9,223 +9,222 @@
   <link rel="icon" href="https://www.blogger.com/favicon-image.g?blogID=8480997599807512435" type="image/png">
   <title>X1Bypass Tools</title>
   <style>
-       /* ... (Your existing styles) ... */
-       body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f6fa;
-    color: #333;
-  }
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-  }
-  h1 {
-    margin-bottom: 20px;
-    color: #2c3e50;
-  }
-  p {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  .main-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #3498db;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .main-link:hover {
-    background-color: #2980b9;
-  }
-  .sub-links {
-    display: none;
-    margin-top: 10px;
-    transition: all 0.3s ease;
-  }
-  .main-link.active + .sub-links {
-    display: block;
-  }
-  .sub-link {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-    background-color: #ecf0f1;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .sub-link:hover {
-    background-color: #d5dbdb;
-  }
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
 
-  /* contact */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
 
-  .contact {
-    margin-top: 40px;
-  }
-  .contact h2 {
-    margin-bottom: 10px;
-    color: #2c3e50;
-  }
-  .contact p {
-    font-size: 18px;
-    color: #333;
-  }
-  .contact-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .contact-buttons a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00ffa6;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  .contact-buttons a:hover {
-    background-color: #00ff9d;
-  }
+h1 {
+  margin-bottom: 20px;
+  color: #0C356A; /* Warna pertama dari palet */
+}
 
-  /* tools */
-  .tools {
-    margin-top: 40px;
-  }
-  .tools h2 {
-    margin-bottom: 10px;
-    color: #2c3e50;
-  }
-  .tools p {
-    font-size: 18px;
-    color: #333;
-  }
-  .tools-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .tools-buttons a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00a2ff;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  .tools-buttons a:hover {
-    background-color: #2446f1;
-  }
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
-  #searchInput {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        margin-bottom: 20px;
-        transition: border-color 0.3s;
-    }
+/* Navigation Links */
+.main-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #279EFF; /* Warna kedua dari palet */
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    #searchInput:focus {
-        outline: none;
-        border-color: #3498db;
-    }
+.main-link:hover {
+  background-color: #40F8FF; /* Warna ketiga dari palet */
+}
 
-  
-  /* Styles for the Footer */
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f5f6fa;
-    text-align: center;
-    padding: 10px;
-    animation: marquee 20s linear infinite; /* Animation for scrolling text */
-  }
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-    /* ... (Your existing styles) ... */
+.sub-links {
+  display: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
 
-    /* Styles for QRIS buttons */
-    .qris-buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .qris-buttons a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #84ff09;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .qris-buttons a:hover {
-      background-color: #77ff00;
-    }
+.main-link.active + .sub-links {
+  display: block;
+}
 
-    /* Hide QRIS image initially */
-    .qris-image {
-      display: none;
-      width: 150px; /* Adjust the width as needed */
-      height: 150px; /* Adjust the height as needed */
-      margin-top: 20px;
-    }
+.sub-link {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  background-color: #D5FFD0; /* Warna keempat dari palet */
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    /* Show QRIS image when the button is clicked */
-    .qris-active .qris-image {
-      display: block;
-    }
+.sub-link:hover {
+  background-color: #C0FCCD; /* Warna yang sedikit lebih terang dari keempat */
+}
 
-    /* changelog */
-    .changelog-container {
-      flex: 1;
-      overflow: hidden;
-      border: 1px solid #ccc;
-      margin-left: 10px;
-      position: relative;
-    }
-    
-    .changelog-box {
-      height: 20%;
-      overflow-y: scroll;
-      padding: 10px;
-    }
-    
-    .changelog-header {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-  </style>
-  <style>
+/* Contact Section */
+.contact {
+  margin-top: 40px;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  color: #0C356A; /* Warna pertama dari palet */
+}
+
+.contact p {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #279EFF; /* Warna kedua dari palet */
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-buttons a:hover {
+  background-color: #40F8FF; /* Warna ketiga dari palet */
+}
+
+/* Tools Section */
+.tools {
+  margin-top: 40px;
+}
+
+.tools h2 {
+  margin-bottom: 10px;
+  color: #0C356A; /* Warna pertama dari palet */
+}
+
+.tools p {
+  font-size: 16px;
+  color: #333;
+}
+
+.tools-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tools-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #279EFF; /* Warna kedua dari palet */
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tools-buttons a:hover {
+  background-color: #40F8FF; /* Warna ketiga dari palet */
+}
+
+/* Search Input */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0C356A; /* Warna pertama dari palet */
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #279EFF; /* Warna kedua dari palet */
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 10px;
+}
+
+/* QRIS Buttons */
+.qris-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.qris-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #279EFF; /* Warna kedua dari palet */
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.qris-buttons a:hover {
+  background-color: #40F8FF; /* Warna ketiga dari palet */
+}
+
+/* Changelog */
+.changelog-container {
+  flex: 1;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  position: relative;
+}
+
+.changelog-box {
+  height: 20%;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.changelog-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
 @media (max-width: 600px) {
   .container {
     padding: 20px;
@@ -253,12 +252,10 @@
 
   .tools ul {
     font-weight: bold;
-    margin: 0 auto; /* Meratakan ul secara horizontal */
-    max-width: 80%; /* Mengatur lebar maksimal ul */
+    margin: 0 auto;
+    max-width: 80%;
   }
 
-
-  /* Keep .tools-buttons in a single row on smaller screens */
   .tools-buttons {
     flex-direction: row;
     justify-content: center;
@@ -269,11 +266,6 @@
   }
 }
 
-
-    /* Style for blurring the content */
-    .blur {
-        filter: blur(10px); /* Adjust the blur amount as needed */
-    }
   </style>
 </head>
 <body>
@@ -337,10 +329,10 @@ window.onload = function() {
       });
     });
   </script>
-
+<br>
   <div class="container">
   <h1>Welcome to X1Bypass Tools Advanced</h1>
-  <blockquote>Last Update 22/8/23</blockquote>
+  <blockquote>Last Update 23/8/23</blockquote>
   <p>Temukan yang kamu butuhkan seperti Ai dan beraneka macam tools yang dikumpulkan disini untuk membantu hidupmu.</p>
 <div>
 
@@ -364,8 +356,8 @@ window.onload = function() {
   <input type="text" id="searchInput" placeholder="Filter Kata ..." onkeyup="searchContent(event)">
 </div>
 
-  <div class="main-link" id="portfolio-list-ai">Search Engine</div>
-  <div class="sub-links" id="portfolio-links-list-ai">
+    <div class="main-link" id="portfolio-Search">Search Engine</div>
+    <div class="sub-links" id="portfolio-links-Search">
     <a href="https://andisearch.com/" class="sub-link">Andi Search</a>
     <a href="https://iask.ai/" class="sub-link">Ask Ai</a>
     <a href="https://gptgo.ai/" class="sub-link">GPTGoo</a>
@@ -378,8 +370,8 @@ window.onload = function() {
     <a href="https://sites.google.com/view/x1bypasstools/chatgpt/aio-search" class="sub-link">AIO Search</a>
     <a href="https://www.tutorai.me/" class="sub-link">Learn Anything</a>
   </div>
-  <div class="main-link" id="portfolio-list-ai">Image</div>
-  <div class="sub-links" id="portfolio-links-list-ai">
+  <div class="main-link" id="portfolio-Image">Image</div>
+  <div class="sub-links" id="portfolio-links-Image">
     <a href="https://openart.ai/create" class="sub-link">OpenArt | LIMITED FREE</a>
     <a href="https://looka.com/" class="sub-link">Looka Design Logo</a>
     <a href="https://animeart.studio/" class="sub-link">AnimeART</a>
@@ -407,8 +399,8 @@ window.onload = function() {
     <a href="https://mst.ai/home" class="sub-link">Minister Ai | Login</a>
     <a href="https://chillin.online/" class="sub-link">Chillin Video | Login | Paid</a>
   </div>
-  <div class="main-link" id="portfolio-list-ai">Prompt</div>
-  <div class="sub-links" id="portfolio-links-list-ai">
+  <div class="main-link" id="portfolio-Prompt">Prompt</div>
+  <div class="sub-links" id="portfolio-links-Prompt">
     <a href="https://imagetoprompt.com/" class="sub-link">Image To Prompt</a>
     <a href="https://replicate.com/methexis-inc/img2prompt" class="sub-link">IMG2Prompt | Image To Prompt</a>
     <a href="https://huggingface.co/spaces/pharma/CLIP-Interrogator" class="sub-link">Clip Interrogator | Image To Prompt</a>
@@ -502,31 +494,12 @@ window.onload = function() {
   <div class="main-link" id="portfolio-downloader">Downloader</div>
   <div class="sub-links" id="portfolio-links-downloader">
     <a href="https://sites.google.com/view/x1bypasstools/downloader/terabox-downloader" class="sub-link">Terabox Downloader</a>
+    <a href="https://teradood.hunternblz.com/" class="sub-link">Terabox & Doodstream Direct Link</a>
     <a href="https://sites.google.com/view/x1bypasstools/downloader/imgdownloader" class="sub-link">IMG Downloader</a>
     <a href="https://sites.google.com/view/x1bypasstools/downloader/get-paid-stock" class="sub-link">GetPaidStock</a>
     <a href="https://sites.google.com/view/x1bypasstools/downloader/downloader" class="sub-link">Downloader la</a>
   </div>
-  <div class="main-link" id="portfolio-lainnya">Lainnya</div>
-  <div class="sub-links" id="portfolio-links-lainnya">
-    <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/cleverpdf" class="sub-link">CleverPDF</a>
-  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/bajakan" class="sub-link">App Bajakan</a>
-  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/tinywow" class="sub-link">Tinywow</a>
-  <a href="https://whatslink.info/" class="sub-link">Whats The Link??</a>
-  <a href="https://cloudconvert.com/" class="sub-link">Cloud Convert</a>
-  <a href="https://www.yalijuda.com/" class="sub-link">Foto / Video Compression | China</a>
-  <a href="https://brie.fi/ng" class="sub-link">Video Chat | Alternative Zoom</a>
-  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/temp-mail" class="sub-link">Temp Mail</a>
-  <a href="https://teradood.hunternblz.com/" class="sub-link">Terabox & Doodstream Direct Link</a>
-  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/telegram-scan" class="sub-link">Telegram Scanner</a>
-  <a href="https://i.ibb.co/H7SMBTB/Picsart-23-08-17-08-38-45-762.jpg" class="sub-link">Deepn*** / Deepfake | PAID</a>
-  <a href="https://clipdrop.co/tools" class="sub-link">ClipDrop</a>
-  <a href="https://links.x1bypass.my.id/" class="sub-link">Short Links</a>
-  <a href="https://teleimg.x1bypass.my.id/" class="sub-link">Telegraph Image | Image Hosting</a>
-  <a href="https://anonymousemail.me/" class="sub-link">Send Anonymous Email</a>
-  <a href="https://raw.githubusercontent.com/Illegal-Services/Illegal_Services/downloads/IS.bookmarks.html" class="sub-link"> Boomarks Illegal Service</a>
-  <a href="https://hunter.io/email-verifier" class="sub-link">Hunter | Email Finder/Verif</a>
-  </div>
-  <div class="main-link" id="portfolio-list-ai">Nonton</div>
+  <div class="main-link" id="portfolio-list-ai">Streaming</div>
   <div class="sub-links" id="portfolio-links-list-ai">
     <a href="https://movieuniverse.se/" class="sub-link">Movie Universe</a>
     <a href="https://bflix.sx/home" class="sub-link">BFlix</a>
@@ -540,6 +513,25 @@ window.onload = function() {
     <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/sokuja" class="sub-link">Sokuja | Nonton Anime</a>
     <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/ngewibu" class="sub-link">Ngewibu.TV | Alternative Bstation</a>
     <a href="https://wwvv.ssoap2day.to/home" class="sub-link">Ssoap2Day</a>
+  </div>
+  <div class="main-link" id="portfolio-lainnya">Lainnya</div>
+  <div class="sub-links" id="portfolio-links-lainnya">
+    <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/cleverpdf" class="sub-link">CleverPDF</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/bajakan" class="sub-link">App Bajakan</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/tinywow" class="sub-link">Tinywow</a>
+  <a href="https://whatslink.info/" class="sub-link">Whats The Link??</a>
+  <a href="https://cloudconvert.com/" class="sub-link">Cloud Convert</a>
+  <a href="https://www.yalijuda.com/" class="sub-link">Foto / Video Compression | China</a>
+  <a href="https://brie.fi/ng" class="sub-link">Video Chat | Alternative Zoom</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/temp-mail" class="sub-link">Temp Mail</a>
+  <a href="https://sites.google.com/view/x1bypasstools/toolslainnya/telegram-scan" class="sub-link">Telegram Scanner</a>
+  <a href="https://i.ibb.co/H7SMBTB/Picsart-23-08-17-08-38-45-762.jpg" class="sub-link">Deepn*** / Deepfake | PAID</a>
+  <a href="https://clipdrop.co/tools" class="sub-link">ClipDrop</a>
+  <a href="https://links.x1bypass.my.id/" class="sub-link">Short Links</a>
+  <a href="https://teleimg.x1bypass.my.id/" class="sub-link">Telegraph Image | Image Hosting</a>
+  <a href="https://anonymousemail.me/" class="sub-link">Send Anonymous Email</a>
+  <a href="https://raw.githubusercontent.com/Illegal-Services/Illegal_Services/downloads/IS.bookmarks.html" class="sub-link"> Boomarks Illegal Service</a>
+  <a href="https://hunter.io/email-verifier" class="sub-link">Hunter | Email Finder/Verif</a>
   </div>
 </div>
 <br><br>
