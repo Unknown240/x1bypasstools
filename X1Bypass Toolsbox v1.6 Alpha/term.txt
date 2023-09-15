@@ -1,4 +1,4 @@
-X1Bypass Microsoft Tools v1.5 BETA
+X1Bypass Toolsbox v1.6 Alpha
 Pemberitahuan Penting: Open Source - Tanggung Jawab dan Peringatan Penggunaan
 
 Penting untuk dicatat bahwa tools ini membutuhkan koneksi internet yang stabil, 
